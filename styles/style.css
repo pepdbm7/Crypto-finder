@@ -1,0 +1,104 @@
+body {
+  background: #ffa6004f; /* old browsers */
+  background: -webkit-linear-gradient(10deg, yellowgreen, #3d2cbd, rgb(1, 7, 84)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(10deg, yellowgreen, #3d2cbd,  rgb(1, 7, 84)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-animation: Gradient 12s ease infinite;
+  -moz-animation: Gradient 12s ease infinite;
+  animation: Gradient 12s ease infinite;
+  background-size: 5000vw 150vh;
+}
+
+@-webkit-keyframes Gradient {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+@-moz-keyframes Gradient {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+@keyframes Gradient {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+
+h1 {
+  font-size: 34px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+form {
+  margin: 50px auto;
+}
+.main-content {
+  margin: 50px auto;
+  background-image: url("../img/background.jpg");
+  -webkit-box-shadow: -1px 20px 52px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 20px 52px -13px rgba(0,0,0,0.75);
+  box-shadow: -1px 20px 52px -13px rgba(0,0,0,0.75);
+}
+
+@media only screen and (max-width: 576px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card {
+  flex-direction: row;
+  background: #535252cb;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  border-top: 5px solid greenyellow;
+  font-size: 2vw;
+}
+
+.image__container {
+  border-bottom: 5px solid greenyellow;
+}
+
+.card img {
+  width: 10vw;
+  border-radius: 50%;
+  height: auto;
+  background-color: white;
+  margin: 4vw;
+}
+
+.card-body h2 {
+  color: #86b32e;
+  font-size: 5vw;
+  font-weight: 700;
+}
+
+.card-left-text {
+  color: greenyellow;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.message {
+  color: white;
+}
+#result {
+  text-align: center;
+}
+.btn {
+  width: 100%;
+}
+#spinner__container {
+  display: none;
+} 
+
+data-thumbnail {
+  width: 10px;
+  height: 10px;
+}
